@@ -8,3 +8,7 @@ import (
 func LoadLoginPage(w http.ResponseWriter, r *http.Request) {
 	utils.ExecuteTemplate(w, "login.html", nil)
 }
+
+func ShowUserRegistrationPage(w http.ResponseWriter, r *http.Request) {
+	utils.ExecuteTemplate(w, "user-register.html", nil)
+}
